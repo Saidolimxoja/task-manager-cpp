@@ -27,6 +27,8 @@ mkdir task-manager-cpp
 cd task-manager-cpp
 ```
 
+---
+
 nano CMakeLists.txt
 
 ```bash
@@ -42,6 +44,8 @@ add_executable(TaskManager main.cc)
 target_link_libraries(TaskManager PRIVATE Drogon::Drogon)
 ```
 
+---
+
 nano main.cc
 
 ```bash
@@ -53,6 +57,8 @@ int main() {
 }
 ```
 
+---
+
 #Сборка
 
 ```bash
@@ -61,6 +67,32 @@ cd build
 cmake .. -DCMAKE_PREFIX_PATH=/usr/local/lib/cmake/Drogon
 make -j$(nproc)
 ```
+
+---
+
+#Запуск
+
+```bash
+./TaskManager
+```
+
+---
+
+#РОУТЫ
+
+```bash
+/  - GET home page (GET)
+
+/tasks - GET Example tasks(GET)
+
+/tasks - POST CREATE Example tasks(POST)
+
+/user -  create TEST user(GET)
+```
+
+---
+
+#СТРУКТУРА
 
 ```bash
 task-manager-cpp/

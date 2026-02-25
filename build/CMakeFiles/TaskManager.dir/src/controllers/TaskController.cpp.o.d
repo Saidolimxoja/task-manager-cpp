@@ -1,7 +1,7 @@
 CMakeFiles/TaskManager.dir/src/controllers/TaskController.cpp.o: \
  /home/saidaka/task-manager-cpp/src/controllers/TaskController.cpp \
  /usr/include/stdc-predef.h \
- /home/saidaka/task-manager-cpp/src/controllers/TaskController.h \
+ /home/saidaka/task-manager-cpp/src/controllers/./TaskController.h \
  /usr/local/include/drogon/HttpController.h \
  /usr/local/include/drogon/DrObject.h /usr/local/include/drogon/exports.h \
  /usr/local/include/drogon/DrClassMap.h \
