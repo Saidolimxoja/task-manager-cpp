@@ -1,7 +1,4 @@
-
-
-
-
+```bash
 sudo apt update
 sudo apt upgrade -y
 
@@ -28,8 +25,7 @@ sudo apt install -y default-libmysqlclient-dev
 
 mkdir task-manager-cpp
 cd task-manager-cpp
-
-
+```
 
 nano CMakeLists.txt
 
@@ -58,6 +54,7 @@ int main() {
 ```
 
 #Сборка
+
 ```bash
 mkdir build
 cd build
@@ -65,9 +62,7 @@ cmake .. -DCMAKE_PREFIX_PATH=/usr/local/lib/cmake/Drogon
 make -j$(nproc)
 ```
 
-
-
-
+```bash
 task-manager-cpp/
 │
 ├── CMakeLists.txt
@@ -97,3 +92,4 @@ task-manager-cpp/
 │       └── JwtUtils.h
 │
 └── README.md
+```
