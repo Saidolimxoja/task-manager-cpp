@@ -1,3 +1,0 @@
-/home/saidaka/task-manager-cpp/build/CMakeFiles/TaskManager.dir
-/home/saidaka/task-manager-cpp/build/CMakeFiles/edit_cache.dir
-/home/saidaka/task-manager-cpp/build/CMakeFiles/rebuild_cache.dir
