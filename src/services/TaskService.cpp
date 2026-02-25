@@ -1,15 +1,14 @@
+// TaskService.cpp
 #include "TaskService.h"
 
 std::vector<Task> TaskService::getAll() {
-    // Здесь позже будет запрос к PostgreSQL
-    return {}; // пока пусто
+    // тут реализация
+    return {};
 }
 
 Task TaskService::create(const Json::Value &data) {
     Task task;
-    task.id = 1; // временно
+    task.id = 1; // пример
     task.title = data["title"].asString();
-    task.description = data["description"].asString();
-    task.done = false;
     return task;
 }
