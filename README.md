@@ -1,3 +1,7 @@
+# Установка Зависимоти
+
+Используем WSL
+
 ```bash
 sudo apt update
 sudo apt upgrade -y
@@ -59,7 +63,7 @@ int main() {
 
 ---
 
-#Сборка
+# Сборка
 
 ```bash
 mkdir build
@@ -70,7 +74,7 @@ make -j$(nproc)
 
 ---
 
-#Запуск
+# Запуск
 
 ```bash
 ./TaskManager
@@ -78,7 +82,7 @@ make -j$(nproc)
 
 ---
 
-#РОУТЫ
+# РОУТЫ
 
 ```bash
 /  - GET home page (GET)
@@ -92,7 +96,7 @@ make -j$(nproc)
 
 ---
 
-#СТРУКТУРА
+# СТРУКТУРА
 
 ```bash
 task-manager-cpp/
