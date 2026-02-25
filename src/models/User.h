@@ -2,7 +2,8 @@
 #include <string>
 #include <json/json.h>
 
-struct User {
+class User {
+public:
     int id;
     std::string username;
     std::string email;

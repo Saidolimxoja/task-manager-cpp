@@ -11,6 +11,7 @@ add_executable(TaskManager
     src/controllers/UserController.cpp
     src/services/TaskService.cpp
     src/services/UserService.cpp
+    src/controllers/HomeController.cpp
 )
 
 target_link_libraries(TaskManager PRIVATE Drogon::Drogon)

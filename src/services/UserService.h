@@ -1,10 +1,8 @@
 #pragma once
-#include "../models/Task.h"
-#include <vector>
+#include "../models/User.h"
 #include <json/json.h>
 
-class TaskService {
+class UserService {
 public:
-    static std::vector<Task> getAll();          // <-- только объявление
-    static Task create(const Json::Value &data); // <-- только объявление
+    static User create(const Json::Value &data);
 };
