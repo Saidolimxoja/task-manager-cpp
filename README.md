@@ -33,36 +33,6 @@ cd task-manager-cpp
 
 ---
 
-nano CMakeLists.txt
-
-```bash
-cmake_minimum_required(VERSION 3.16)
-project(TaskManager)
-
-set(CMAKE_CXX_STANDARD 17)
-
-find_package(Drogon REQUIRED)
-
-add_executable(TaskManager main.cc)
-
-target_link_libraries(TaskManager PRIVATE Drogon::Drogon)
-```
-
----
-
-nano main.cc
-
-```bash
-#include <drogon/drogon.h>
-
-int main() {
-    drogon::app().addListener("0.0.0.0", 8080);
-    drogon::app().run();
-}
-```
-
----
-
 # Сборка
 
 ```bash
