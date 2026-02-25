@@ -1,11 +1,12 @@
-# Установка Зависимоти
+# TaskManager C++ — README
+
+## Установка зависимостей
 
 Используем WSL
 
 ```bash
 sudo apt update
 sudo apt upgrade -y
-
 
 sudo apt install -y \
 build-essential \
@@ -19,21 +20,32 @@ uuid-dev
 g++ --version
 cmake --version
 
-
+# Установка Drogon
 sudo apt install -y libdrogon-dev
 dpkg -l | grep drogon
 
-sudo apt install -y libmysqlclient-dev
+# Установка MySQL клиентских библиотек
+sudo apt install -y libmysqlclient-dev default-libmysqlclient-dev
 
-sudo apt install -y default-libmysqlclient-dev
-
+# Создание проекта
 mkdir task-manager-cpp
 cd task-manager-cpp
 ```
 
+⚠️ Если версия libdrogon-dev из репозитория слишком старая, можно установить Drogon из исходников:
+
+```bash
+git clone https://github.com/drogonframework/drogon.git
+cd drogon
+mkdir build && cd build
+cmake ..
+make -j$(nproc)
+sudo make install
+```
+
 ---
 
-# Сборка
+## Сборка проекта
 
 ```bash
 mkdir build
@@ -44,29 +56,29 @@ make -j$(nproc)
 
 ---
 
-# Запуск
+## Запуск
 
 ```bash
 ./TaskManager
 ```
-
+После запуска сервер слушает на http://localhost:8080.
 ---
 
-# РОУТЫ
+## РОУТЫ
 
 ```bash
-/  - GET home page (GET)
+| Путь     | Метод | Описание                         |
+| -------- | ----- | -------------------------------- |
+| `/`      | GET   | Главная страница                 |
+| `/tasks` | GET   | Получение списка задач           |
+| `/tasks` | POST  | Создание новой задачи            |
+| `/user`  | POST  | Создание пользователя (тестовый) |
 
-/tasks - GET Example tasks(GET)
-
-/tasks - POST CREATE Example tasks(POST)
-
-/user -  create TEST user(GET)
 ```
 
 ---
 
-# СТРУКТУРА
+## СТРУКТУРА
 
 ```bash
 task-manager-cpp/
